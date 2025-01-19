@@ -356,6 +356,11 @@ docker start -ai container_name
 ```
 You cannot override --entrypoint with docker start.
 
+- Run with override --entrypoint:
+```bash
+docker run -it --entrypoint=bash python:3.9
+```
+
 # Running Windows on macOS with Docker
 
 Docker on macOS cannot natively run Windows containers because they require the Windows kernel. However, Linux images like Ubuntu work because Docker Desktop uses a lightweight Linux VM.
